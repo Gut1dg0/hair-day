@@ -1,0 +1,162 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+main {
+    margin-inline-start: 2rem;
+    margin-inline-end: 2rem;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    min-height: 20rem;
+    padding-block-start: 3rem;
+    background-color: bisque;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color:rgba(201, 77, 28, 0.900);
+    min-height: 3rem;
+    padding-block-start: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    font-size: 1.51rem;
+    text-decoration: underline;
+}
+
+ul li {
+    display: inline;
+}
+
+ul {
+    min-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#banner {
+    background-image: url("red-hair.png");
+    min-height: 30rem;
+    background-size: 30rem;
+    background-repeat: no-repeat;
+    text-align: end;
+    padding-block-start: 5rem;
+    margin-block-start: 3rem;
+}
+
+#banner h2 {
+    font-size: 2.5rem;
+    margin-inline-end: 1rem;
+    margin-block-end: 5rem;
+    animation: h2_change 5s infinite;
+}
+
+@keyframes h2_change {
+    0% {
+        color: black;
+    }
+
+    25% {
+        color: white;
+    }
+
+    50% {
+        color: purple;
+    }
+
+    75% {
+        color: white;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+#banner p {
+    font-size: 2rem;
+    margin-inline-end: 1rem;
+    margin-block-end: 5rem;
+    animation: p_change 5s  infinite;
+    color: purple;
+}
+
+@keyframes p_change {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    25% {
+        transform: rotateY(10deg);
+    }
+
+    50% {
+        transform: rotateY(0deg);
+    }
+
+    75% {
+        transform: rotateY(-10deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+#banner a {
+    margin-inline-end: 1rem;
+    font-size: 2rem;
+    color: purple;
+    text-decoration: none;
+    border: .3rem solid purple;
+    border-radius: .5rem;
+    box-shadow: .3rem .3rem .2rem plum;
+    padding: .5rem;
+}
+
+#banner a:hover {
+    background-color: bisque;
+}
+
+#promotions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+}
+
+#promotions section:hover {
+    box-shadow: .5rem .5rem .8rem black;
+}
+
+#promotions h3 {
+    font-size: 1.5rem;
+}
+
+#promotions p {
+    font-size: 1.2rem;
+}
+
+.promos {
+    padding-inline-start: .4rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    min-height: 8rem;
+    margin-block-start: 3rem;
+    padding: 2rem 2rem 0 2rem;
+    background-color: bisque;
+}
