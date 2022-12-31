@@ -18,11 +18,7 @@ header {
 }
 
 nav {
-    display: flex;
-    justify-content: center;
     background-color:rgba(201, 77, 28, 0.900);
-    min-height: 3rem;
-    padding-block-start: 1rem;
 }
 
 nav a {
@@ -32,18 +28,7 @@ nav a {
 }
 
 nav a:hover {
-    font-size: 1.51rem;
     text-decoration: underline;
-}
-
-ul li {
-    display: inline;
-}
-
-ul {
-    min-width: 30rem;
-    display: flex;
-    justify-content: space-between;
 }
 
 #banner {
