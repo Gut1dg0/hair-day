@@ -75,7 +75,7 @@ nav a:hover {
     margin-inline-end: 1rem;
     margin-block-end: 5rem;
     animation: p_change 5s  infinite;
-    color: purple;
+    color: white;
 }
 
 @keyframes p_change {
@@ -89,6 +89,7 @@ nav a:hover {
 
     50% {
         transform: rotateY(0deg);
+        color: black;
     }
 
     75% {
@@ -144,4 +145,22 @@ footer {
     margin-block-start: 3rem;
     padding: 2rem 2rem 0 2rem;
     background-color: bisque;
+}
+
+@media (max-width:425px) {
+    #promotions {
+        margin-block-start: 5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #banner {
+        background-size: 275px 300px;
+    }
+
+    #banner p {
+        margin-block-start: 7rem;
+    }
+    
+    
 }
